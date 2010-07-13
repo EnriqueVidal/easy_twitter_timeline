@@ -11,7 +11,7 @@ easy_twitter_timeline is a plugin for jQuery that enables web developers to add 
 
 == How to use
 
-To use easy slider just add a link and a div with id easy_twitter like this:
+To use easy twitter timeline just add a link and a div with id easy_twitter like this:
 
 === Markup
 
