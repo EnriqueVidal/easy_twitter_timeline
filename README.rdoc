@@ -1,0 +1,59 @@
+== Welcome to easy_twitter_timeline
+
+easy_twitter_timeline is a plugin for jQuery that enables web developers to add a simple twitter timeline box of their favorite user.
+
+
+== Getting Started
+
+1. Download easy_twitter_timeline
+2. Add easy_twitter_timeline and jQuery to your document
+3. Enjoy!
+
+== How to use
+
+To use easy slider just add a link and a div with id easy_twitter like this:
+
+=== Markup
+
+  <div id="easy_twitter"></div>
+  
+=== JavaScript
+
+You only need to add easy_accordion to the selector of your choice
+
+  $(document).ready(function() {
+    $("content").easy_twitter_timeline();
+  });
+  
+== Customize
+
+easy_twitter_timeline first parameter object supports 2 options:
+
+  username: 'jquery' // This is is the screen name of the user from whom you wish to load tweets
+  max:      20      // This is the max number of tweets you wish to load (20 being the max)
+  
+In case you need to be specific about the element to affect easy_twitter_timeline supports a second parameter which is the selectr you want to affect
+
+  $("#content").easy_twitter_timeline( { max: 10 }, "#boxes #twitter_box" )
+
+This will only affect the div with id twitter_box which is under another div with id boxes.
+
+=== Style
+
+Changing easy_twitter_timeline looks is as simple as creating a css file, this is the markup produced by easy_twitter_timeline not the one you need to create:
+
+  <div id="easy_twitter">
+    <div id="easy_twitter_tweets">
+      <ul id="easy_twitter_tweet_list">
+        <li id="tweet_num_1" class="easy_twitter_tweet">
+          <span class="tweet_user_thumb">
+            <img alt="jquery" src="http://a3.twimg.com/profile_images/59268975/jquery_avatar_normal.png" class="profile_pic" />
+          </span>
+          <span class="tweet_content">
+          <a href="http://www.twitter.com/jquery">jquery </a> jQuery JavaScript Templates Tutorial: Nesting Templates http://bit.ly/dmpFtj</span>
+          <span class="easy_twitter_tweet_date">6 hours ago</span>
+        </li>
+        ....
+      </ul>
+    </div>
+  </div>
